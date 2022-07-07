@@ -1,0 +1,12 @@
+NAME: При вводе значений {TEST DATA} в результате отображается hex-маркировка {TEST DATA}
+TEST DATA:[rgb(22,94,109),#165e6d] и [rgb(0,0,0),#000000]
+PRIORITY: CRITICAL
+PRECONDITIONS:
+  - Открыт браузер
+  - Находимся на странице https://www.rgbtohex.net/
+STEPS:
+    - В поле "red" ввести значение {TEST DATA}
+    - В поле "green" ввести значение {TEST DATA}
+    - В поле "blue" ввести значение {TEST DATA}
+EXPECTED RESULT:
+    - В результатах отображается hex-маркировка, содержащая текст {TEST DATA}

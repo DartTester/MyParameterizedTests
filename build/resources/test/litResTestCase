@@ -1,0 +1,12 @@
+NAME: При вводе {TEST DATA} в строку поиска в списке присутствует книга с названием {TEST DATA}
+TEST DATA:[Harry Potter, The Ultimate Harry Potter and Philosophy,
+           Sherlock Holmes, 5 best Sherlock Holmes Stories]
+PRIORITY: CRITICAL
+PRECONDITIONS:
+  - Открыт браузер
+  - Находимся на странице https://www.litres.ru/luchshie-knigi
+STEPS:
+    - В поле поиска ввести значение {TEST DATA}
+    - Нажать кнопку "Поиск"
+EXPECTED RESULT:
+    - В результатах отображается книга, содержащая текст {TEST DATA}
